@@ -1,0 +1,8 @@
+aiogram
+aiohttp
+APScheduler
+SQLAlchemy
+asyncpg
+pydantic
+pydantic-settings
+python-dotenv
