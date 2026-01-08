@@ -26,7 +26,7 @@ async def main() -> None:
 
     scheduler = build_scheduler(bot)
     scheduler.start()
-
+    
     try:
         await dp.start_polling(bot)
     finally:
