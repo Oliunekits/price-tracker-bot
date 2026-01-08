@@ -1,11 +1,8 @@
 from __future__ import annotations
-
 from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery
-
 from sqlalchemy import select, delete, update
-
 from app.bot.keyboards.trackers import trackers_manage_kb
 from app.bot.keyboards.common import back_to_menu_kb, main_menu_kb
 from app.db.models import Tracker
