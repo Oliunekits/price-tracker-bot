@@ -1,14 +1,10 @@
 from __future__ import annotations
-
-
-
 import re
 import aiohttp
 from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
-
 from app.bot.states import AddTracker
 from app.bot.keyboards.common import choose_kind_kb, choose_direction_kb, back_to_menu_kb
 from app.bot.keyboards.coins import coins_kb
