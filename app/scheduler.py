@@ -14,7 +14,7 @@ def build_scheduler(bot: Bot) -> AsyncIOScheduler:
     async def job():
         async with SessionLocal() as session:
             await check_prices_and_notify(bot, session)
-
+            
     scheduler.add_job(
         job,
         trigger=IntervalTrigger(seconds=settings.CHECK_INTERVAL_SECONDS),
