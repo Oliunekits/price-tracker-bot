@@ -1,7 +1,6 @@
 from aiogram import Router, F
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, CallbackQuery
-
 from app.bot.keyboards.common import main_menu_kb, choose_kind_kb, back_to_menu_kb
 
 router = Router()
