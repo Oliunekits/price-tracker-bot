@@ -1,5 +1,4 @@
 from __future__ import annotations
-
 from typing import Iterable
 import aiohttp
 from .types import CoinSearchResult
