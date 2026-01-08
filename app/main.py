@@ -1,9 +1,7 @@
 import asyncio
 import logging
-
 from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
-
 from app.config import settings
 from app.bot.router import root_router
 from app.db.init_db import init_db
