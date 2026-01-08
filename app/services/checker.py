@@ -1,15 +1,12 @@
 from __future__ import annotations
-
 from collections import defaultdict
 from datetime import datetime, timezone
 from decimal import Decimal
 from typing import Any
-
 import aiohttp
 from aiogram import Bot
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
 from app.db.models import Tracker, TrackerKind, Direction
 from app.services.prices.coingecko import CoinGeckoClient
 from app.services.prices.frankfurter import FrankfurterClient
