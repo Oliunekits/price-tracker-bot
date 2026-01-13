@@ -17,7 +17,7 @@ async def main() -> None:
     setup_logging()
 
     await init_db()
-
+    
     bot = Bot(token=settings.BOT_TOKEN)
     dp = Dispatcher(storage=MemoryStorage())
     dp.include_router(root_router)
